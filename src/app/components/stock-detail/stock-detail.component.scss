@@ -1,0 +1,30 @@
+.card-title {
+  display: flex;
+  align-items: center;
+  &-txt {
+    flex: 1;
+  }
+  &-close-icon {
+    cursor: pointer;
+  }
+}
+
+.detail-items-wrapper {
+  padding: 0 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 360px));
+  grid-auto-rows: minmax(40px, auto);
+  gap: 20px;
+  .detail-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    &-separator {
+      padding-right: 4px;
+      padding-left: 1px;
+    }
+    &-value {
+      font-weight: 500;
+    }
+  }
+}

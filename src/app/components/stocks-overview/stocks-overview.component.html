@@ -1,0 +1,58 @@
+<div class="grid-container">
+  <div class="grid-container-header">
+    <h3 class="grid-container-header-title">Mock Stocks</h3>
+    <div
+      class="clr-row clr-align-items-center clr-justify-content-end grid-container-header-filter"
+    >
+      <label>Tag Filter: </label>
+      <clr-combobox-container *ngIf="tags">
+        <clr-combobox name="tag" [formControl]="filterCtr" [clrMulti]="false">
+          <clr-options>
+            <clr-option *clrOptionItems="let tag of tags" [clrValue]="tag">
+              {{ tag }}
+            </clr-option>
+          </clr-options>
+        </clr-combobox>
+      </clr-combobox-container>
+    </div>
+  </div>
+  <div class="grid-container-content">
+    <clr-datagrid>
+      <clr-dg-column>Symbol</clr-dg-column>
+      <clr-dg-column>Name</clr-dg-column>
+      <clr-dg-column>Last Price</clr-dg-column>
+      <clr-dg-column>Tag</clr-dg-column>
+      <clr-dg-column>Actions</clr-dg-column>
+
+      <clr-dg-row *ngFor="let stock of stocks">
+        <clr-dg-cell>
+          <span (click)="viewStockDetails(stock)" class="btn btn-link btn-sm">{{
+            stock.symbol
+          }}</span>
+        </clr-dg-cell>
+        <clr-dg-cell>{{ stock.name }}</clr-dg-cell>
+        <clr-dg-cell>{{ stock.lastPrice | currency }}</clr-dg-cell>
+        <clr-dg-cell>{{ stock.tag }}</clr-dg-cell>
+        <clr-dg-cell class="actions-cell">
+          <span class="actions">
+            <cds-icon
+              class="action-icon"
+              shape="times"
+              (click)="deleteStock(stock.id)"
+            ></cds-icon>
+          </span>
+        </clr-dg-cell>
+      </clr-dg-row>
+
+      <clr-dg-footer>{{ stocks?.length || 0 }} stocks</clr-dg-footer>
+    </clr-datagrid>
+  </div>
+  <div class="grid-container-details">
+    <app-stock-detail
+      *ngIf="selectedStock"
+      [stock]="selectedStock"
+      (onClose)="selectedStock = null"
+    >
+    </app-stock-detail>
+  </div>
+</div>

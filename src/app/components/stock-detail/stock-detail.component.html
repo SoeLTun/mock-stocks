@@ -1,0 +1,33 @@
+<div class="card" *ngIf="stock">
+  <div class="card-block">
+    <div class="card-title">
+      <span class="card-title-txt">Stock Details</span>
+      <cds-icon
+        class="card-title-close-icon"
+        shape="times"
+        (click)="closeStockDetail()"
+      ></cds-icon>
+    </div>
+    <div class="detail-items-wrapper">
+      @for(item of stockDetailsItem; track item.label) {
+      <ng-container
+        *ngTemplateOutlet="
+          detailItem;
+          context: { label: item.label, value: stock[item.key] || '' }
+        "
+      ></ng-container>
+      }
+    </div>
+    <ng-template #detailItem let-label="label" let-value="value">
+      <div class="detail-item">
+        <span class="detail-item-label">
+          {{ label }}
+        </span>
+        <span class="detail-item-separator">:</span>
+        <span class="detail-item-value">
+          {{ value }}
+        </span>
+      </div>
+    </ng-template>
+  </div>
+</div>

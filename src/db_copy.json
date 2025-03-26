@@ -1,0 +1,181 @@
+{
+  "stocks": [
+    {
+      "id": "AAPL",
+      "symbol": "AAPL",
+      "lastPrice": 145.09,
+      "name": "Apple Inc.",
+      "marketCap": 2350000000000,
+      "tag": "favorite"
+    },
+    {
+      "id": "GOOGL",
+      "symbol": "GOOGL",
+      "lastPrice": 2729.23,
+      "name": "Alphabet Inc.",
+      "marketCap": 1820000000000,
+      "tag": "watching"
+    },
+    {
+      "id": "AMZN",
+      "symbol": "AMZN",
+      "lastPrice": 3402.72,
+      "name": "Amazon.com Inc.",
+      "marketCap": 1700000000000,
+      "tag": "toSell"
+    },
+    {
+      "id": "MSFT",
+      "symbol": "MSFT",
+      "lastPrice": 299.35,
+      "name": "Microsoft Corporation",
+      "marketCap": 2240000000000,
+      "tag": "favorite"
+    },
+    {
+      "id": "TSLA",
+      "symbol": "TSLA",
+      "lastPrice": 680.76,
+      "name": "Tesla Inc.",
+      "marketCap": 800000000000,
+      "tag": "watching"
+    },
+    {
+      "id": "META",
+      "symbol": "META",
+      "lastPrice": 380.88,
+      "name": "Meta Platforms Inc.",
+      "marketCap": 1000000000000,
+      "tag": "toSell"
+    },
+    {
+      "id": "NVDA",
+      "symbol": "NVDA",
+      "lastPrice": 221.43,
+      "name": "NVIDIA Corporation",
+      "marketCap": 550000000000,
+      "tag": "favorite"
+    },
+    {
+      "id": "DIS",
+      "symbol": "DIS",
+      "lastPrice": 189.14,
+      "name": "The Walt Disney Company",
+      "marketCap": 340000000000,
+      "tag": "forFriends"
+    },
+    {
+      "id": "TSM",
+      "symbol": "TSM",
+      "lastPrice": 116.42,
+      "name": "Taiwan Semiconductor Manufacturing Company",
+      "marketCap": 600000000000,
+      "tag": "watching"
+    },
+    {
+      "id": "V",
+      "symbol": "V",
+      "lastPrice": 232.98,
+      "name": "Visa Inc.",
+      "marketCap": 500000000000,
+      "tag": "toSell"
+    },
+    {
+      "id": "JNJ",
+      "symbol": "JNJ",
+      "lastPrice": 164.42,
+      "name": "Johnson & Johnson",
+      "marketCap": 450000000000,
+      "tag": "favorite"
+    },
+    {
+      "id": "BRKA",
+      "symbol": "BRKA",
+      "lastPrice": 460000.00,
+      "name": "Berkshire Hathaway Inc.",
+      "marketCap": 700000000000,
+      "tag": "watching"
+    },
+    {
+      "id": "PYPL",
+      "symbol": "PYPL",
+      "lastPrice": 290.56,
+      "name": "PayPal Holdings Inc.",
+      "marketCap": 340000000000,
+      "tag": "toSell"
+    },
+    {
+      "id": "NFLX",
+      "symbol": "NFLX",
+      "lastPrice": 563.74,
+      "name": "Netflix Inc.",
+      "marketCap": 250000000000,
+      "tag": "favorite"
+    },
+    {
+      "id": "INTC",
+      "symbol": "INTC",
+      "lastPrice": 56.74,
+      "name": "Intel Corporation",
+      "marketCap": 230000000000,
+      "tag": "watching"
+    },
+    {
+      "id": "AMD",
+      "symbol": "AMD",
+      "lastPrice": 115.43,
+      "name": "Advanced Micro Devices Inc.",
+      "marketCap": 140000000000,
+      "tag": "toSell"
+    },
+    {
+      "id": "PFE",
+      "symbol": "PFE",
+      "lastPrice": 49.29,
+      "name": "Pfizer Inc.",
+      "marketCap": 270000000000,
+      "tag": "forFriends"
+    },
+    {
+      "id": "BABA",
+      "symbol": "BABA",
+      "lastPrice": 183.74,
+      "name": "Alibaba Group Holding Limited",
+      "marketCap": 500000000000,
+      "tag": "watching"
+    },
+    {
+      "id": "CVX",
+      "symbol": "CVX",
+      "lastPrice": 131.25,
+      "name": "Chevron Corporation",
+      "marketCap": 250000000000,
+      "tag": "favorite"
+    },
+    {
+      "id": "XOM",
+      "symbol": "XOM",
+      "lastPrice": 105.64,
+      "name": "Exxon Mobil Corporation",
+      "marketCap": 350000000000,
+      "tag": "toSell"
+    },
+    {
+      "id": "GS",
+      "symbol": "GS",
+      "lastPrice": 380.14,
+      "name": "Goldman Sachs Group Inc.",
+      "marketCap": 130000000000,
+      "tag": "watching"
+    },
+    {
+      "id": "SPY",
+      "symbol": "SPY",
+      "lastPrice": 409.27,
+      "name": "SPDR S&P 500 ETF Trust",
+      "marketCap": 400000000000,
+      "tag": "favorite"
+    }
+  ]
+
+}

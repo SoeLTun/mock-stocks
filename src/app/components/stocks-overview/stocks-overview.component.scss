@@ -1,0 +1,57 @@
+.grid-container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  overflow: hidden;
+  &-header {
+    flex: 0;
+    margin-bottom: 8px;
+    &-title {
+      text-align: center;
+    }
+    &-filter {
+      margin: 0;
+      label {
+        margin-right: 12px;
+      }
+      clr-combobox-container {
+        margin-top: 0;
+      }
+    }
+  }
+  &-content {
+    overflow: hidden;
+    flex-basis: auto;
+    clr-datagrid {
+      height: 98%;
+    }
+    clr-dg-cell.actions-cell {
+      position: relative;
+    }
+    .actions {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .action-icon {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    clr-dg-cell.actions-cell:hover .actions {
+      visibility: visible;
+    }
+  }
+  &-details {
+    margin-top: 20px;
+    flex: 0;
+  }
+}

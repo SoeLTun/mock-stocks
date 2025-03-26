@@ -19,7 +19,7 @@ Run `npm run start` or `ng serve` for a dev server. Navigate to `http://localhos
 
 ### Start JSON Server Only
 
-Run `npm run json-server` for a json server. Navigate to `http://localhost:3000/`. The server will automatically reload if you change src/db.json file. To reset the data in src/db.json, copy the data from db_copy.json file and paste in db.json.
+Run `npm run json-server` for a json server. Navigate to `http://localhost:3000/`. The server will automatically reload if you change src/db.json file. 
 
 ### Resetting Mock Data
 
